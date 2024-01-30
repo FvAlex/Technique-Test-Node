@@ -1,10 +1,12 @@
-var express = require("express");
+const express = require("express");
+const cors = require("cors");
+const app = express();
 
-var app = express();
+app.use(cors());
 
 console.log("Démarrage serveur NodeJs technique test");
 
-var route = require("./routes/route");
+const route = require("./routes/route");
 
 route.init(app);
 
