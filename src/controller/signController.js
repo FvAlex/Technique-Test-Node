@@ -1,14 +1,14 @@
 const {
   getZodiacFromYear,
-  getAstrologicalSignFromMonthAndDay,
-} = require("./../services/getSignAndZodiacFromBirthdate");
+  getAstrologicalSignFromMonthAndDay
+} = require('./../services/getSignAndZodiacFromBirthdate')
 
 module.exports = {
   GetZodiacFromYearController: (req, res, next) => {
-    return getZodiacFromYear(req, res);
+    return getZodiacFromYear(req, res)
   },
 
   GetAstrologicalSignFromMonthAndDayController: (req, res, next) => {
-    return getAstrologicalSignFromMonthAndDay(req, res);
-  },
-};
+    return getAstrologicalSignFromMonthAndDay(req, res)
+  }
+}
