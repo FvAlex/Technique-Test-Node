@@ -6,7 +6,7 @@ app.use(cors());
 
 console.log("Démarrage serveur NodeJs technique test");
 
-const route = require("./routes/route");
+const route = require("./src/routes/route");
 
 route.init(app);
 
